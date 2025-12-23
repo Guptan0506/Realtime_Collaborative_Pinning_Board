@@ -1,7 +1,9 @@
+import { supabase } from './lib/supabaseClient';
 import AddPinForm from './components/AddPinForm';
 import PinsBoard from './components/PinsBoard';
 
 export default function App() {
+    window.supabase = supabase;
   return (
     <div className="min-h-screen bg-[#fafafa] font-sans text-gray-900">
       <nav className="p-8 text-center">
